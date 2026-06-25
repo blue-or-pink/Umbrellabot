@@ -1,7 +1,7 @@
 import motionSensor
 import servo
 import waterSensor
-import drive
+import drivetrain
 # Here goes the main robot while loop, the more specific stuff can branch off from here
 docking = False
 
@@ -13,7 +13,7 @@ def main():
             motionSensor.periodic()
             servo.periodic()
             waterSensor.periodic()
-            drive.periodic()
+            drivetrain.periodic()
 
 if __name__ == "__main__":
     main()
