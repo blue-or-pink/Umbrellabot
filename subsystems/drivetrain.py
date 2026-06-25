@@ -9,7 +9,7 @@ drive = MotorController()
 #===
 def init():
         global driveCommand
-        driveCommand = driveCustom(300,300,300,300)
+        driveCommand = driveForward
         drive.set_motor_direction(front_left=1,rear_left=1,front_right=1,rear_right=1)
 #===
 def stop():
