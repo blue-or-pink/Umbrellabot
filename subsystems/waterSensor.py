@@ -1,6 +1,6 @@
 from gpiozero import Button
 #
-sensor = Button(17, pull_up=True)
+sensor = Button(16, pull_up=True)
 detected = False
 def waterDetected():
     detected = True
