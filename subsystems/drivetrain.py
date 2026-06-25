@@ -1,4 +1,4 @@
-#from motor import MotorController
+from motor import MotorController
 import time
 #=== vars vvv
 driveCommand = None
@@ -9,7 +9,7 @@ drive = MotorController()
 #===
 def init():
         global driveCommand
-        driveCommand = stop()
+        driveCommand = driveCustom(300,300,300,300)
         drive.set_motor_direction(front_left=1,rear_left=1,front_right=1,rear_right=1)
 #===
 def stop():
