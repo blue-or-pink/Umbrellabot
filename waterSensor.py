@@ -1,0 +1,2 @@
+def periodic():
+    pass
