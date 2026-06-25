@@ -1,5 +1,15 @@
-# here go the servo functions, they will be called from main.py
+import time
+import waterSensor
+from servo import Servo 
+
+pwm = Servo()  # default is 0? so no param
+
 def init():
     pass
+# problem: the second it doesnt detect water it'll go down,
+# TODO: deal w that later
 def periodic():
-    pass
+    if waterSensor.getValue():
+        pwm.setServoAngle(0, 90)
+    else:
+        pwm.setServoAngle(0, 0) 

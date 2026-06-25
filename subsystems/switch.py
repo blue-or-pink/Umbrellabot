@@ -4,10 +4,6 @@ def init():
     pass
 #
 
-
-
-
-
 def getValue():
     return value
 
