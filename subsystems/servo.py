@@ -1,5 +1,5 @@
 import time
-import waterSensor
+import subsystems.waterSensor as waterSensor
 from servo import Servo 
 
 pwm = Servo()  # default is 0? so no param
