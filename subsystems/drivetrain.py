@@ -13,7 +13,8 @@ def init():
         drive.set_motor_direction(front_left=1,rear_left=1,front_right=1,rear_right=1)
 #===
 def stop():
-      drive.set_motors(front_left=0,rear_left=0,front_right=0,rear_right=0)
+      pass
+      #drive.set_motors(front_left=0,rear_left=0,front_right=0,rear_right=0)
 #
 # add scalar param? vvv
 
