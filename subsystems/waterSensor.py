@@ -1,4 +1,4 @@
-from gpiozero import Button
+"""from gpiozero import Button
 #
 sensor = Button(17, pull_up=True)
 detected = False
@@ -18,3 +18,5 @@ def periodic():
     sensor.when_released = waterNotDetected
     if detected:
         print("water detected!")
+"""
+# any output above 200 milivolts = rain
