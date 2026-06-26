@@ -35,6 +35,7 @@ def init():
 
 def periodic():
     if True:#waterSensor.getValue():
-        pwm_servo.set_servo_pwm('0', 90)
+        pwm_servo.set_servo_pwm(pwm_servo,'0', 90)
     else:
-        pwm_servo.set_servo_pwm('0', 0)
+        pass
+        #pwm_servo.set_servo_pwm(pwm_servo,'0', 0)
