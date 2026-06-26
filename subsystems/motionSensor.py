@@ -25,5 +25,7 @@ def init():
 def periodic():
     motiondect()
 
+
+# NOTE: the breadboard isn't working with the sensor, so we're gonna use 3 mini grabbers to connect to the pins
     
 
