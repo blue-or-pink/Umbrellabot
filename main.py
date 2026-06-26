@@ -11,7 +11,7 @@ def init():
     motionSensor.init()
     servo.init()
     waterSensor.init()
-    switch.init
+    switch.init()
 
 def main():
     while True:
