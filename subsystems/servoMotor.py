@@ -1,5 +1,5 @@
 import time
-import subsystems.waterSensor as waterSensor
+#import subsystems.waterSensor as waterSensor
 from gpiozero import Servo
 
 pwm = Servo(0)  # default is 0? so no param
