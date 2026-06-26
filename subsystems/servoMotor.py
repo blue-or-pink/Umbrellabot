@@ -28,7 +28,7 @@ class Servo:
         pulse = 2500 - int((angle + error) / 0.09) if channel == '0' else 500 + int((angle + error) / 0.09)
         self.pwm_servo.set_servo_pulse(self.pwm_channel_map[channel], pulse)
 
-pwm_servo = Servo(0) 
+pwm_servo = Servo()
 
 def init():
     pass
