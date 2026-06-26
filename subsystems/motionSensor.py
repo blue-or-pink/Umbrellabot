@@ -1,4 +1,4 @@
-"""import subsystems.drivetrain as drivetrain 
+import subsystems.drivetrain as drivetrain 
 import time 
 import machine
 pir_pin = machine.pin(6, machine.Pin.IN)
@@ -12,7 +12,7 @@ def motiondect():
             time.sleep(0.1)
     except KeyboardInterrupt:
         print("\Program. stopped.")
-"""
+
 
 
 
