@@ -2,7 +2,7 @@ import time
 import subsystems.waterSensor as waterSensor
 from gpiozero import Servo
 
-pwm = Servo()  # default is 0? so no param
+pwm = Servo(0)  # default is 0? so no param
 
 def init():
     pass
