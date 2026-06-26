@@ -10,6 +10,6 @@ def init():
 # TODO: deal w that later
 def periodic():
     if True:#waterSensor.getValue():
-        pwm.setServoAngle(0, 90)
+        pwm.max()
     else:
-        pwm.setServoAngle(0, 0) 
+        pwm.min()
