@@ -1,5 +1,5 @@
 import subsystems.motionSensor as motionSensor
-import subsystems.servo as servo
+import subsystems.servoMotor as servoMotor
 import subsystems.waterSensor as waterSensor
 import subsystems.drivetrain as drivetrain
 import subsystems.switch as switch
@@ -9,7 +9,7 @@ docking = False
 def init():
     drivetrain.init()
     motionSensor.init()
-    servo.init()
+    servoMotor.init()
     waterSensor.init()
     switch.init()
 
@@ -19,7 +19,7 @@ def main():
             pass
         else:
             motionSensor.periodic()
-            servo.periodic()
+            servoMotor.periodic()
             waterSensor.periodic()
             drivetrain.periodic()
             switch.periodic()
