@@ -9,7 +9,7 @@ def init():
 # problem: the second it doesnt detect water it'll go down,
 # TODO: deal w that later
 def periodic():
-    if waterSensor.getValue():
+    if True:#waterSensor.getValue():
         pwm.setServoAngle(0, 90)
     else:
         pwm.setServoAngle(0, 0) 
