@@ -34,8 +34,11 @@ def init():
     pass
 
 def periodic():
-    if False:#waterSensor.getValue():
+    degree = int(input("enter servo angle: "))
+    pwm_servo.set_servo_pwm('0',degree)
+    """if False:#waterSensor.getValue():
         pwm_servo.set_servo_pwm('0', 90)
 
     else:
         pwm_servo.set_servo_pwm('0', 0)
+    """
