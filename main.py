@@ -8,7 +8,7 @@ docking = False
 
 def init():
     drivetrain.init()
-    #motionSensor.init()
+    motionSensor.init()
     servoMotor.init()
     waterSensor.init()
     switch.init()
@@ -18,7 +18,7 @@ def main():
         if docking:
             pass
         else:
-            #motionSensor.periodic()
+            motionSensor.periodic()
             servoMotor.periodic()
             waterSensor.periodic()
             drivetrain.periodic()
