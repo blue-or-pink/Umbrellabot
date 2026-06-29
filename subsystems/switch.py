@@ -4,9 +4,6 @@ from signal import pause
 button = Button(5)
 # Assign the function to the button
 
-print("Waiting for switch press...")
-pause()
-
 value = False
 
 def pressed():
