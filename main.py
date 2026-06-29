@@ -10,7 +10,7 @@ def init():
     drivetrain.init()
     #motionSensor.init()
     servoMotor.init()
-    #waterSensor.init()
+    waterSensor.init()
     switch.init()
 
 def main():
@@ -20,7 +20,7 @@ def main():
         else:
             #motionSensor.periodic()
             servoMotor.periodic()
-            #waterSensor.periodic()
+            waterSensor.periodic()
             drivetrain.periodic()
             switch.periodic()
 

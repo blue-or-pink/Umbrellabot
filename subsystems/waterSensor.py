@@ -1,11 +1,23 @@
-"""from gpiozero import Button
+#from gpiozero import Button
+import smbus
+import PCF8591 as ADC  # Import the library for the PCF8591 module
+
 #
-sensor = Button(17, pull_up=True)
+DEVICE_BUS = 1
+DEVICE_ADDR = 0x15
+bus = smbus.SMBus(DEVICE_BUS)
+bus.write_byte_data(DEVICE_ADDR, 0x00, 0x01)
+# idk ^^^
+ADC.setup(0x48)
+
+#sensor = Button(17, pull_up=True)
 detected = False
-def waterDetected():
-    detected = True
-def waterNotDetected():
-    detected = False
+def detectWater():
+    global detected
+    if ADC.read(0) > 0:
+        detected = True
+    else:
+        detected = False
 
 def init():
     pass
@@ -14,9 +26,8 @@ def getValue():
     return detected
 
 def periodic():
-    sensor.when_pressed = waterDetected
-    sensor.when_released = waterNotDetected
+    detectWater()
     if detected:
         print("water detected!")
-"""
+
 # any output above 200 milivolts = rain
