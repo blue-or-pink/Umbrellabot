@@ -12,10 +12,11 @@ ADC.setup(0x48)
 
 #sensor = Button(17, pull_up=True)
 
+
 detected = False
 def detectWater():
     global detected
-    if ADC.read(0) > 95:
+    if ADC.read(0) > 90:
         detected = True
     else:
         detected = False
