@@ -1,4 +1,5 @@
 import time
+import switch
 #import subsystems.waterSensor as waterSensor
 from pca9685 import PCA9685
 
@@ -34,8 +35,7 @@ def init():
     pass
 
 def periodic():
-    if False:#waterSensor.getValue():
+    if switch.getValue():#waterSensor.getValue():
         pwm_servo.set_servo_pwm('0', 90)
-
     else:
         pwm_servo.set_servo_pwm('0', 0)
