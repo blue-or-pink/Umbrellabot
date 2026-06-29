@@ -1,4 +1,4 @@
-import subsystems.drivetrain as drivetrain 
+"""import subsystems.drivetrain as drivetrain 
 import time 
 import machine
 pir_pin = machine.pin(6, machine.Pin.IN)
@@ -29,3 +29,4 @@ def periodic():
 # NOTE: the breadboard isn't working with the sensor, so we're gonna use 3 mini grabbers to connect to the pins
     
 
+"""
