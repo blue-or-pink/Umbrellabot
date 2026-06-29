@@ -30,8 +30,9 @@ def getValue():
 def periodic():
     #print(ADC.read(0))
     detectWater()
-    if detected:
-        print("water detected!")
+    #if detected:
+
+        #print("water detected!")
 
 # any output above 200 milivolts = rain
 # min = 48

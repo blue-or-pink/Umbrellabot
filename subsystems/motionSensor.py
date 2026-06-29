@@ -12,10 +12,10 @@ def motiondect():
     global detected
     if pir.motion_detected:
         detected = True
-        print("Motion Detected")
+        #print("Motion Detected")
     else:
         detected = False
-        print("Motion NOTTTT Detected")
+        #print("Motion NOTTTT Detected")
 
 # to tell drivetrain to do something, 
 # use drivetrain.driveCommand = drivetrain.driveForward (etc. - check the functions in drivetrain.py)
