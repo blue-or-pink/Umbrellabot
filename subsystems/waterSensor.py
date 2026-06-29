@@ -16,7 +16,7 @@ ADC.setup(0x48)
 detected = False
 def detectWater():
     global detected
-    if ADC.read(0) > 84:
+    if ADC.read(0) < 63.5:
         detected = True
     else:
         detected = False
@@ -28,9 +28,12 @@ def getValue():
     return detected
 
 def periodic():
-    print(ADC.read(0))
+    #print(ADC.read(0))
     detectWater()
     if detected:
         print("water detected!")
 
 # any output above 200 milivolts = rain
+# min = 48
+# max = 79
+# it goes down when in water!!!
