@@ -4,9 +4,9 @@ import PCF8591 as ADC
 
 #
 DEVICE_BUS = 1
-DEVICE_ADDR = 0x15
+DEVICE_ADDR = 0x40
 bus = smbus.SMBus(DEVICE_BUS)
-bus.write_byte_data(DEVICE_ADDR, 0x48, 0x40)
+bus.write_byte_data(DEVICE_ADDR, 0x40, 0x48)
 # idk ^^^
 ADC.setup(0x48)
 
