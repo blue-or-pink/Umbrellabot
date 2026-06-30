@@ -1,7 +1,7 @@
 #from gpiozero import Button
 import smbus
 import PCF8591 as ADC 
-
+import time
 #
 DEVICE_BUS = 1
 DEVICE_ADDR = 0x40
@@ -30,8 +30,9 @@ def getValue():
 def periodic():
     print(ADC.read(0))
     detectWater()
-    if detected:
-        print("water detected!")
+    time.sleep(0.5)
+    #if detected:
+     #   print("water detected!")
 
 # any output above 200 milivolts = rain
 # min = 48
