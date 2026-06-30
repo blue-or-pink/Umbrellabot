@@ -16,7 +16,7 @@ ADC.setup(0x48)
 detected = False
 def detectWater():
     global detected
-    if ADC.read(0) < 25:# 63.5:
+    if ADC.read(0) < 3:# 63.5:
         detected = True
     else:
         detected = False
@@ -38,3 +38,6 @@ def periodic():
 # min = 48
 # max = 79
 # it goes down when in water!!!
+
+# 3 cold and 63.5 room temp
+# lower temp = lower number range
