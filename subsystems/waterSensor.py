@@ -1,7 +1,7 @@
 #from gpiozero import Button
 import smbus
 import PCF8591 as ADC 
-
+import time
 #
 DEVICE_BUS = 1
 DEVICE_ADDR = 0x40
@@ -16,7 +16,7 @@ ADC.setup(0x48)
 detected = False
 def detectWater():
     global detected
-    if ADC.read(0) < 63.5:
+    if ADC.read(0) < 3: #63.5:
         detected = True
     else:
         detected = False
@@ -30,11 +30,14 @@ def getValue():
 def periodic():
     #print(ADC.read(0))
     detectWater()
+    #time.sleep(0.5)
     #if detected:
-
-        #print("water detected!")
+       #print("water detected!")
 
 # any output above 200 milivolts = rain
 # min = 48
 # max = 79
 # it goes down when in water!!!
+
+# 3 cold and 63.5 room temp
+# lower temp = lower number range

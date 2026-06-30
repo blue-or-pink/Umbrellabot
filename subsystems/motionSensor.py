@@ -24,6 +24,8 @@ motiondect()
 #recall the function 
         
 
+def followMotion():
+    pass
 # to tell drivetrain to do something, 
 # use drivetrain.driveCommand = drivetrain.driveForward (etc. - check the functions in drivetrain.py)
 
@@ -32,4 +34,5 @@ def init():
 
 def periodic():
     motiondect()
+    
     
