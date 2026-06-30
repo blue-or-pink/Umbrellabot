@@ -19,7 +19,7 @@ def motiondect():
 #drive forward then check surrroundings  
     else:
         detected = False
-        print("no motions")
+        print("No motion")
         drivetrain.stop()
         drivetrain.turnLeft()
         time.sleep(1)
