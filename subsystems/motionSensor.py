@@ -15,7 +15,7 @@ def motiondect():
         print("Motion")
         detected = True
         drivetrain.driveForward()
-        break    
+        break  
 #drive forward then check surrroundings  
     else:
         detected = False
@@ -24,7 +24,7 @@ def motiondect():
         drivetrain.turnLeft()
         time.sleep(1)
         drivetrain.turnRight()
-    continue 
+        continue 
  
 #recall the function 
         
