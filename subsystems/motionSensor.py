@@ -12,16 +12,14 @@ detected = False
 def motiondect():
     global detected
     if pir.motion_detected:
-        print("Movement")
-        #detected = True
-        #drivetrain.driveForward()
+        detected = True
+        drivetrain.driveForward()
             
 #drive forward then check surrroundings  
     else:
-        print("No movement")
-        #detected = False
-        #drivetrain.turnLeft()
-        #drivetrain.turnRight()
+        detected = False
+        drivetrain.turnLeft()
+        drivetrain.turnRight()
   
 #recall the function 
         
