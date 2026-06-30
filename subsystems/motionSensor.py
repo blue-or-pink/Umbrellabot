@@ -20,7 +20,7 @@ def motiondect():
         detected = False
         drivetrain.turnLeft()
         drivetrain.turnRight()
-motiondect()    
+  
 #recall the function 
         
 
