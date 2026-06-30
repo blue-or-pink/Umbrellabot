@@ -47,5 +47,5 @@ def getDriveCommand():
 
 #
 def periodic():
-    command = getDriveCommand()
-    command()
+    #command = getDriveCommand()
+    #command()
