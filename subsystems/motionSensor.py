@@ -3,6 +3,7 @@ import time
 #import machine
 #pir_pin = machine.pin(6, machine.Pin.IN)
 from gpiozero import MotionSensor
+import subsystems.waterSensor as waterSensor
 
 # Initialize the sensor connected to GPIO 4 (Physical Pin 7)
 pir = MotionSensor(6)
@@ -12,10 +13,16 @@ def motiondect():
     global detected
     if pir.motion_detected:
         detected = True
-        #print("Motion Detected")
+        driveForward()
+            
+#drive forward then check surrroundings  
     else:
         detected = False
-        #print("Motion NOTTTT Detected")
+        turnLeft()
+        turnRight()
+motiondect()    
+#recall the function 
+        
 
 # to tell drivetrain to do something, 
 # use drivetrain.driveCommand = drivetrain.driveForward (etc. - check the functions in drivetrain.py)
