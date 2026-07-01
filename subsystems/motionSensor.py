@@ -15,7 +15,7 @@ def motiondect():
     global dir
     if pir.motion_detected:
         detected = True
-        drivetrain.drivecommand = drivetrain.driveForward()
+        drivetrain.drivecommand = drivetrain.driveForward
 #drive forward then check surrroundings  
     else:
         #print(timer)
@@ -28,9 +28,9 @@ def motiondect():
         
         if timer == 0:
             if dir:
-                drivetrain.drivecommand = drivetrain.turnLeft()
+                drivetrain.drivecommand = drivetrain.turnLeft
             else:
-                drivetrain.drivecommand = drivetrain.turnRight()
+                drivetrain.drivecommand = drivetrain.turnRight
         timer += 1 
 
 # to tell drivetrain to do something, 
@@ -40,7 +40,6 @@ def init():
     pass
 
 def periodic():
-    pass
-    #motiondect()
+    motiondect()
     
     
