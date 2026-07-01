@@ -21,8 +21,8 @@ def released():
     global value
     value = not value
     print("switch released!")
-    time.sleep(3)
     main.docking = not main.docking
+    time.sleep(3)
     
 def init():
     pass

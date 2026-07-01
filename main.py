@@ -4,7 +4,7 @@ import subsystems.waterSensor as waterSensor
 import subsystems.drivetrain as drivetrain
 import subsystems.switch as switch
 # Here goes the main robot while loop, the more specific stuff can branch off from here
-docking = False
+docking = True
 
 def init():
     drivetrain.init()
