@@ -35,7 +35,7 @@ def motiondect():
     if pir.motion_detected:
         print("Motion")
         detected = True
-        drivetrain.driveForward()
+        #drivetrain.driveForward()
 #drive forward then check surrroundings  
     else:
         detected = False
@@ -43,7 +43,7 @@ def motiondect():
         drivetrain.stop()
         #drivetrain.turnLeft()
         time.sleep(1)
-        drivetrain.turnRight()
+        #drivetrain.turnRight()
 while True:
     should_B = motiondect()
     if should_B: 
