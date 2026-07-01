@@ -32,7 +32,7 @@ def motiondect():
     
 """
 
-dir = True // true = left, right = False 
+dir = True // True = left, right = False 
 time = 0 
 def motiondect():
     global detected
