@@ -28,7 +28,7 @@ def getValue():
     return detected
 
 def periodic():
-    #print(ADC.read(0))
+    print(ADC.read(0))
     detectWater()
     #time.sleep(0.5)
     #if detected:
