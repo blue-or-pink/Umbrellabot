@@ -12,7 +12,6 @@ ADC.setup(0x48)
 
 #sensor = Button(17, pull_up=True)
 #read first few numbers to determine the in and out values
-reader = ADC.read(0) 
 detected = False
 def detectWater():
     global detected
