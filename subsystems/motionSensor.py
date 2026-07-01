@@ -8,7 +8,29 @@ import subsystems.waterSensor as waterSensor
 # Initialize the sensor connected to GPIO 4 (Physical Pin 7)
 pir = MotionSensor(6)
 detected = False
+"""
+dir = True // true = left, right = false
+timer = 0
+def motiondect():
+    global detected
+    if pir.motion_detected:
+        detected = True
+        drivetrain.driveCommand = drivetrain.driveForward
+    else:
+        detected = False
+        if timer >= 2000 or timer = 0:
+            if dir:
+                drivetrain.driveCommand = drivetrain.turnLeft
+            else:
+                drivetrain.driveCommand = drivetrain.turnRight
 
+        if timer >= 2000:
+            dir = not dir
+            timer = 0
+        
+        timer += 1
+    
+"""
 
 
 def motiondect():
