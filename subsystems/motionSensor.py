@@ -13,7 +13,7 @@ def motiondect():
     global detected
     global timer
     global dir
-    if False: #pir.motion_detected:
+    if pir.motion_detected:
         detected = True
         drivetrain.driveCommand = drivetrain.driveForward
 #drive forward then check surrroundings  
@@ -21,7 +21,7 @@ def motiondect():
         #print(timer)
         # test change
         detected = False 
-        if timer >= 1000:
+        if timer >= 200:
             print("timer reset")
             dir = not dir 
             timer = 0
