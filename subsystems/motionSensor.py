@@ -32,21 +32,26 @@ def motiondect():
     
 """
 
-
+dir = True // true = left, right = False 
+time = 0 
 def motiondect():
     global detected
     if pir.motion_detected:
-        print("Motion")
         detected = True
-        drivetrain.driveForward()
+        drivetrain.drivecommand = drivetrain.driveForward()
 #drive forward then check surrroundings  
     else:
-        detected = False
-        print("No motion")
-        drivetrain.stop()
-        drivetrain.turnLeft()
-        time.sleep(1)
-        #drivetrain.turnRight()
+        detected = False 
+        if time >= 2000 or time == 0
+            if dir:
+                drivetrain.drivecommand = drivetrain.turnLeft()
+            else:
+                drivetrain.drivecommand = drivetrain.turnRight()
+        if time >= 2000:
+            dir = not dir 
+            time = 0
+        time += 1 
+       
 """while True:
     should_B = motiondect()
     if should_B: 
