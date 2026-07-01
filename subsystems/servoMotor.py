@@ -1,5 +1,5 @@
 import time
-import subsystems.switch as switch
+import subsystems.waterSensor as waterSensor
 from pca9685 import PCA9685
 
 class Servo:
