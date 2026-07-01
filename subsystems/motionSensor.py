@@ -13,7 +13,7 @@ def motiondect():
     global detected
     global timer
     global dir
-    if pir.motion_detected:
+    if True:#pir.motion_detected:
         detected = True
         drivetrain.drivecommand = drivetrain.driveForward
 #drive forward then check surrroundings  
