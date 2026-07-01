@@ -25,6 +25,7 @@ def motiondect():
             else:
                 drivetrain.drivecommand = drivetrain.turnRight()
         if timer >= 2000:
+            print("timer reset")
             dir = not dir 
             timer = 0
         timer += 1 
