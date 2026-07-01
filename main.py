@@ -16,6 +16,7 @@ def init():
 def main():
     while True:
         if docking:
+            drivetrain.stop()
             switch.periodic()
         else:
             motionSensor.periodic()
