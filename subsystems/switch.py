@@ -1,6 +1,7 @@
 from gpiozero import Button
 from signal import pause
 import main
+import time
 button = Button(5)
 # Assign the function to the button
 
@@ -13,12 +14,14 @@ def pressed():
     value = not value
     print("switch pressed!")
     main.docking = not main.docking
+    time.sleep(3)
 
     
 def released():
     global value
     value = not value
     print("switch released!")
+    time.sleep(3)
     main.docking = not main.docking
     
 def init():
