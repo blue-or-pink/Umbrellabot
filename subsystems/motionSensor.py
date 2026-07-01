@@ -21,7 +21,7 @@ def motiondect():
         #print(timer)
         # test change
         detected = False 
-        if timer >= 100:
+        if timer >= 50:
             print("timer reset")
             dir = not dir 
             timer = 0
