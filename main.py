@@ -8,7 +8,7 @@ docking = False
 
 def init():
     drivetrain.init()
-    motionSensor.init()
+    #motionSensor.init()
     servoMotor.init()
     waterSensor.init()
     switch.init()
