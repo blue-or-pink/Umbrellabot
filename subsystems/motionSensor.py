@@ -19,6 +19,7 @@ def motiondect():
 #drive forward then check surrroundings  
     else:
         #print(timer)
+        # test change
         detected = False 
         if timer >= 1000:
             print("timer reset")
