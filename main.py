@@ -25,6 +25,5 @@ def main():
             switch.periodic()
 
 if __name__ == "__main__":
-    drivetrain.driveCommand = drivetrain.turnLeft
     init()
     main()
