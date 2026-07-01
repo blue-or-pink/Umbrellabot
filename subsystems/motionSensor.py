@@ -21,7 +21,7 @@ def motiondect():
         #print(timer)
         # test change
         detected = False 
-        if timer >= 200:
+        if timer >= 100:
             print("timer reset")
             dir = not dir 
             timer = 0
@@ -40,7 +40,7 @@ def init():
     pass
 
 def periodic():
-    pass
-    #motiondect()
+    #pass
+    motiondect()
     
     
