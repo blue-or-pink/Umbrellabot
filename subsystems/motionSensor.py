@@ -44,11 +44,12 @@ def motiondect():
         #drivetrain.turnLeft()
         time.sleep(1)
         #drivetrain.turnRight()
-while True:
+"""while True:
     should_B = motiondect()
     if should_B: 
         break
     time.sleep(0.1)
+"""
 
 #recall the function 
         
