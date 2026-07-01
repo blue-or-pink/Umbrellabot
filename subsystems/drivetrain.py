@@ -27,8 +27,8 @@ def driveBackward():
 def turnRight():
       drive.set_motors(front_left=1000,rear_left=1000,front_right=-1000,rear_right=-1000)
 
-def turnLeft():
-      drive.set_motors(front_left=-1000,rear_left=-1000,front_right=1000,rear_right=1000)
+#def turnLeft():
+ #     drive.set_motors(front_left=-1000,rear_left=-1000,front_right=1000,rear_right=1000)
 
 def strafeRight():
       drive.set_motors(front_left=-1000,rear_left=1000,front_right=1000,rear_right=-1000)

@@ -41,7 +41,7 @@ def motiondect():
         detected = False
         print("No motion")
         drivetrain.stop()
-        drivetrain.turnLeft()
+        #drivetrain.turnLeft()
         time.sleep(1)
         drivetrain.turnRight()
 while True:
