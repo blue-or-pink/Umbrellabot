@@ -9,13 +9,14 @@ import subsystems.waterSensor as waterSensor
 pir = MotionSensor(6)
 detected = False
 
+
+
 def motiondect():
     global detected
     if pir.motion_detected:
         print("Motion")
         detected = True
         drivetrain.driveForward()
-        
 #drive forward then check surrroundings  
     else:
         detected = False
@@ -24,7 +25,6 @@ def motiondect():
         drivetrain.turnLeft()
         time.sleep(1)
         drivetrain.turnRight()
-        
 while True:
     should_B = motiondect()
     if should_B: 
