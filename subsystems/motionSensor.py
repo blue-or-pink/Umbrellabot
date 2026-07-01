@@ -40,6 +40,7 @@ def init():
     pass
 
 def periodic():
-    motiondect()
+    pass
+    #motiondect()
     
     
