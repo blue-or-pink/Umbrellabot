@@ -21,16 +21,16 @@ def motiondect():
         #print(timer)
         # test change
         detected = False 
-        if timer >= 50:
+        if timer >= 100:
             print("timer reset")
             dir = not dir 
             timer = 0
         
         if timer == 0:
             if dir:
-                drivetrain.driveCommand = drivetrain.turnLeft(0,90)
+                drivetrain.driveCommand = drivetrain.turnLeft
             else:
-                drivetrain.driveCommand = drivetrain.turnRight(80, 0)
+                drivetrain.driveCommand = drivetrain.turnRight
         timer += 1 
 
 # to tell drivetrain to do something, 
