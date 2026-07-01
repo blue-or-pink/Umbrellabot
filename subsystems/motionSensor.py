@@ -19,15 +19,16 @@ def motiondect():
 #drive forward then check surrroundings  
     else:
         detected = False 
-        if timer >= 2000 or timer == 0:
-            if dir:
-                drivetrain.drivecommand = drivetrain.turnLeft()
-            else:
-                drivetrain.drivecommand = drivetrain.turnRight()
         if timer >= 2000:
             print("timer reset")
             dir = not dir 
             timer = 0
+        
+        if timer == 0:
+            if dir:
+                drivetrain.drivecommand = drivetrain.turnLeft()
+            else:
+                drivetrain.drivecommand = drivetrain.turnRight()
         timer += 1 
 
 # to tell drivetrain to do something, 
