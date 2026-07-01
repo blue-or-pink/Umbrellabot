@@ -1,5 +1,5 @@
 import subsystems.drivetrain as drivetrain 
-import time 
+import time
 #import machine
 #pir_pin = machine.pin(6, machine.Pin.IN)
 from gpiozero import MotionSensor
@@ -33,24 +33,25 @@ def motiondect():
 """
 
 dir = True #True = left, right = False 
-time = 0 
+timer = 0 
 def motiondect():
     global detected
+    global timer
     if pir.motion_detected:
         detected = True
         drivetrain.drivecommand = drivetrain.driveForward()
 #drive forward then check surrroundings  
     else:
         detected = False 
-        if time >= 2000 or time == 0:
+        if timer >= 2000 or timer == 0:
             if dir:
                 drivetrain.drivecommand = drivetrain.turnLeft()
             else:
                 drivetrain.drivecommand = drivetrain.turnRight()
-        if time >= 2000:
+        if timer >= 2000:
             dir = not dir 
-            time = 0
-        time += 1 
+            timer = 0
+        timer += 1 
        
 """while True:
     should_B = motiondect()
