@@ -4,7 +4,7 @@ import subsystems.waterSensor as waterSensor
 import subsystems.drivetrain as drivetrain
 import subsystems.switch as switch
 # Here goes the main robot while loop, the more specific stuff can branch off from here
-docking = True
+docking = False
 
 def init():
     drivetrain.init()
@@ -19,7 +19,7 @@ def main():
             drivetrain.stop()
             switch.periodic()
         else:
-            print("not docking")
+            #print("not docking")
             motionSensor.periodic()
             servoMotor.periodic()
             waterSensor.periodic()
