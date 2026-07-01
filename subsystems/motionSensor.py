@@ -28,9 +28,9 @@ def motiondect():
         
         if timer == 0:
             if dir:
-                drivetrain.driveCommand = drivetrain.turnLeft
+                drivetrain.driveCommand = drivetrain.turnLeft(0,90)
             else:
-                drivetrain.driveCommand = drivetrain.turnRight
+                drivetrain.driveCommand = drivetrain.turnRight(80, 0)
         timer += 1 
 
 # to tell drivetrain to do something, 
@@ -40,7 +40,7 @@ def init():
     pass
 
 def periodic():
-    pass
-    #motiondect()
+    #pass
+    motiondect()
     
     
