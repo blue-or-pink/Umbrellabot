@@ -14,7 +14,6 @@ def pressed():
     value = not value
     print("switch pressed!")
     main.docking = not main.docking
-    time.sleep(3)
 
     
 def released():
@@ -22,7 +21,6 @@ def released():
     value = not value
     print("switch released!")
     main.docking = not main.docking
-    time.sleep(3)
     
 def init():
     pass
