@@ -19,6 +19,7 @@ def main():
             drivetrain.stop()
             switch.periodic()
         else:
+            print("not docking")
             motionSensor.periodic()
             servoMotor.periodic()
             waterSensor.periodic()
