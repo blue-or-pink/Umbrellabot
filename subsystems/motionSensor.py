@@ -3,7 +3,7 @@ import time
 #import machine
 #pir_pin = machine.pin(6, machine.Pin.IN)
 from gpiozero import MotionSensor
-import subsystems.waterSensor as waterSensor
+
 
 # Initialize the sensor connected to GPIO 4 (Physical Pin 7)
 pir = MotionSensor(6)
