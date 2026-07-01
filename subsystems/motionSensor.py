@@ -32,7 +32,7 @@ def motiondect():
     
 """
 
-dir = True // True = left, right = False 
+dir = True #True = left, right = False 
 time = 0 
 def motiondect():
     global detected
@@ -42,7 +42,7 @@ def motiondect():
 #drive forward then check surrroundings  
     else:
         detected = False 
-        if time >= 2000 or time == 0
+        if time >= 2000 or time == 0:
             if dir:
                 drivetrain.drivecommand = drivetrain.turnLeft()
             else:
