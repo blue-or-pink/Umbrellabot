@@ -37,7 +37,7 @@ def init():
 # when the value changes rather than constantly?
 # consider later
 def periodic():
-    if switch.getValue():#waterSensor.getValue():
+    if waterSensor.getValue():
         pwm_servo.set_servo_pwm('2', 90)
         #print("90")
     else:

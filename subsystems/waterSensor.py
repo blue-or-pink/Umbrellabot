@@ -41,3 +41,5 @@ def periodic():
 
 # 3 cold and 63.5 room temp
 # lower temp = lower number range
+#in water - 40
+#out water - 35
