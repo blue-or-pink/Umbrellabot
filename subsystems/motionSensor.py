@@ -5,17 +5,37 @@ import time
 from gpiozero import MotionSensor
 import subsystems.waterSensor as waterSensor
 
-# Initialize the sensor connected to GPIO 4 (Physical Pin 7)
 pir = MotionSensor(6)
 detected = False
+"""
+dir = True // true = left, right = false
+timer = 0
+def motiondect():
+    global detected
+    if pir.motion_detected:
+        detected = True
+        drivetrain.driveCommand = drivetrain.driveForward
+    else:
+        detected = False
+        if timer >= 2000 or timer = 0:
+            if dir:
+                drivetrain.driveCommand = drivetrain.turnLeft
+            else:
+                drivetrain.driveCommand = drivetrain.turnRight
 
+        if timer >= 2000:
+            dir = not dir
+            timer = 0
+        
+        timer += 1
+    
+"""
 def motiondect():
     global detected
     if pir.motion_detected:
         print("Motion")
         detected = True
         drivetrain.driveForward()
-        return False 
 #drive forward then check surrroundings  
     else:
         detected = False
@@ -24,7 +44,6 @@ def motiondect():
         drivetrain.turnLeft()
         time.sleep(1)
         drivetrain.turnRight()
-        return True 
 while True:
     should_B = motiondect()
     if should_B: 
@@ -44,5 +63,5 @@ def init():
 
 def periodic():
     motiondect()
-    
+
     
