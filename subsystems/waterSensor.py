@@ -18,7 +18,7 @@ ADC.setup(0x48)
 detected = False
 def detectWater():
     global detected
-    if ADC.read(0) < 27: #63.5:
+    if ADC.read(0) < 20: #63.5:
         detected = True
     else:
         detected = False
