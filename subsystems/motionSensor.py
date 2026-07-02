@@ -22,10 +22,11 @@ def motiondect():
         drivetrain.driveCommand = drivetrain.driveForward
 #drive forward then check surrroundings  
     else:
+        timer += 1
         #print(timer)
         # test change
         detected = False 
-        if timer >= 150:
+        if timer >= 50:
             print("timer reset")
             dir = not dir 
             timer = 0
@@ -35,7 +36,6 @@ def motiondect():
                 drivetrain.driveCommand = drivetrain.turnLeft
             else:
                 drivetrain.driveCommand = drivetrain.turnRight
-        timer += 1 
 
 # to tell drivetrain to do something, 
 # use drivetrain.driveCommand = drivetrain.driveForward (etc. - check the functions in drivetrain.py)
