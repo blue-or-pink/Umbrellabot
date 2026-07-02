@@ -44,7 +44,7 @@ def init():
     pass
 
 def periodic():
-    pass
-    #otiondect()
+    #pass
+    motiondect()
     
     

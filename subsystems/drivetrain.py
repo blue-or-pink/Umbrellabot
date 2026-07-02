@@ -21,22 +21,22 @@ def stop():
 # add scalar param? vvv
 
 def driveForward():
-      drive.set_motors(front_left=500,rear_left=500,front_right=650,rear_right=650)
+      drive.set_motors(front_left=550,rear_left=550,front_right=700,rear_right=700)
 
 def driveBackward():
-      drive.set_motors(front_left=-500,rear_left=-500,front_right=-650,rear_right=-650)
+      drive.set_motors(front_left=-550,rear_left=-550,front_right=-700,rear_right=-700)
 
 def turnRight():
-      drive.set_motors(front_left=500,rear_left=500,front_right=-650,rear_right=-650)
+      drive.set_motors(front_left=550,rear_left=550,front_right=-700,rear_right=-700)
 
 def turnLeft():
-     drive.set_motors(front_left=-500,rear_left=-500,front_right=650,rear_right=650)
+     drive.set_motors(front_left=-550,rear_left=-550,front_right=700,rear_right=700)
 
 def strafeRight():
-      drive.set_motors(front_left=-500,rear_left=500,front_right=650,rear_right=-650)
+      drive.set_motors(front_left=-550,rear_left=550,front_right=700,rear_right=-700)
 
 def strafeLeft():
-      drive.set_motors(front_left=500,rear_left=-500,front_right=-650,rear_right=650)
+      drive.set_motors(front_left=550,rear_left=-550,front_right=-700,rear_right=700)
 
 def driveCustom(fl,rl,fr,rr):
       drive.set_motors(front_left=fl,rear_left=rl,front_right=fr,rear_right=rr)
