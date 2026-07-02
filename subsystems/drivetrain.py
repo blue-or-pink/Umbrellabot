@@ -13,7 +13,7 @@ drive = MotorController()
 def init():
         global driveCommand
         driveCommand = stop
-        drive.set_motor_direction(front_left=0.6,rear_left=0.6,front_right=0.6,rear_right=0.6)
+        drive.set_motor_direction(front_left=1,rear_left=1,front_right=1,rear_right=1)
 #===
 def stop():
       drive.set_motors(front_left=0,rear_left=0,front_right=0,rear_right=0)
@@ -21,22 +21,22 @@ def stop():
 # add scalar param? vvv
 
 def driveForward():
-      drive.set_motors(front_left=1000,rear_left=1000,front_right=1000,rear_right=1000)
+      drive.set_motors(front_left=500,rear_left=500,front_right=500,rear_right=500)
 
 def driveBackward():
-      drive.set_motors(front_left=-1000,rear_left=-1000,front_right=-1000,rear_right=-1000)
+      drive.set_motors(front_left=-500,rear_left=-500,front_right=-500,rear_right=-500)
 
 def turnRight():
-      drive.set_motors(front_left=1000,rear_left=1000,front_right=-1000,rear_right=-1000)
+      drive.set_motors(front_left=500,rear_left=500,front_right=-500,rear_right=-500)
 
 def turnLeft():
-     drive.set_motors(front_left=-1000,rear_left=-1000,front_right=1000,rear_right=1000)
+     drive.set_motors(front_left=-500,rear_left=-500,front_right=500,rear_right=500)
 
 def strafeRight():
-      drive.set_motors(front_left=-1000,rear_left=1000,front_right=1000,rear_right=-1000)
+      drive.set_motors(front_left=-500,rear_left=500,front_right=500,rear_right=-500)
 
 def strafeLeft():
-      drive.set_motors(front_left=1000,rear_left=-1000,front_right=-1000,rear_right=1000)
+      drive.set_motors(front_left=500,rear_left=-500,front_right=-500,rear_right=500)
 
 def driveCustom(fl,rl,fr,rr):
       drive.set_motors(front_left=fl,rear_left=rl,front_right=fr,rear_right=rr)
