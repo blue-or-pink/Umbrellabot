@@ -1,3 +1,7 @@
+# Name: switch.py
+# Author: Jay
+# Purpose: to get signal from a physical switch that turns on the robot - 
+# to send a signal to main.py to start running the other files' periodic() functions
 from gpiozero import Button
 from signal import pause
 import main

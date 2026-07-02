@@ -1,3 +1,7 @@
+# Name: main.py
+# Author: Jay
+# Purpose: main file that runs all the init() and periodic() functions in all the other subystems 
+
 import subsystems.motionSensor as motionSensor
 import subsystems.servoMotor as servoMotor
 import subsystems.waterSensor as waterSensor

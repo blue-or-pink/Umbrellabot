@@ -1,7 +1,12 @@
+# Name: servoMotor.py
+# Author: Jay
+# Purpose: to get the value of the water sensor, and extend the umbrella if water is detected
+# by changing the PWM signal given to the servo
 import time
 import subsystems.waterSensor as waterSensor
 from pca9685 import PCA9685
 
+# Servo class copied from Freenove github, defines the servo communication & signal sending
 class Servo:
     def __init__(self):
         self.pwm_frequency = 50

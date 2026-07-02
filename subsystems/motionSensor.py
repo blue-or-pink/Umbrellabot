@@ -1,3 +1,7 @@
+# Name: motionSensor.py
+# Authors: Lizz & Jay
+# Purpose: to detect motion using heat sensing & to follow it by 
+# requesting different commands of the drivetrain
 import subsystems.drivetrain as drivetrain 
 #import time
 #import machine

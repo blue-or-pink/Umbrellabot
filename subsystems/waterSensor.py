@@ -1,4 +1,7 @@
-#from gpiozero import Button
+# Name: waterSensor.py
+# Author: Jay
+# Purpose: To detect water (rain) and update its detected value
+
 import smbus
 import PCF8591 as ADC 
 import time

@@ -1,3 +1,6 @@
+# Name: PCF8591.py
+# Author: Freenove (github)
+# Purpose: to read and write data from and to the ADC for the water sensor
 #!/usr/bin/env python3
 import smbus
 import time

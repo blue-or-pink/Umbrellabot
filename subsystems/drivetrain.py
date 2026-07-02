@@ -1,3 +1,6 @@
+# Name: drivetrain.py
+# Authors: Jay & Lizz
+# Purpose: to contain the commands for running the drivetrain
 from motor import MotorController
 import time
 #=== vars vvv
