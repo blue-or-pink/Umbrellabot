@@ -10,7 +10,7 @@ def init():
     drivetrain.init()
     motionSensor.init()
     servoMotor.init()
-    waterSensor.init()
+    #waterSensor.init()
     switch.init()
 
 def main():
@@ -22,7 +22,7 @@ def main():
             #print("not docking")
             motionSensor.periodic()
             servoMotor.periodic()
-            waterSensor.periodic()
+            #waterSensor.periodic()
             drivetrain.periodic()
             switch.periodic()
 
