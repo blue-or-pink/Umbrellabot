@@ -13,7 +13,7 @@ drive = MotorController()
 def init():
         global driveCommand
         driveCommand = stop
-        drive.set_motor_direction(front_left=1,rear_left=1,front_right=1,rear_right=1)
+        drive.set_motor_direction(front_left=0.3,rear_left=0.3,front_right=0.3,rear_right=0.3)
 #===
 def stop():
       drive.set_motors(front_left=0,rear_left=0,front_right=0,rear_right=0)
